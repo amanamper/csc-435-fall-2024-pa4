@@ -4,7 +4,7 @@ public class FileRetrievalClient
 {
     public static void main(String[] args)
     {
-        ClientSideEngine engine = new ClientSideEngine();
+        ClientProcessingEngine engine = new ClientProcessingEngine();
         ClientAppInterface appInterface = new ClientAppInterface(engine);
         
         // read commands from the user

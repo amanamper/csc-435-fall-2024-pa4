@@ -2,14 +2,13 @@ package csc435.app;
 
 import java.lang.System;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class ServerAppInterface {
-    private ServerSideEngine engine;
+    private ServerProcessingEngine engine;
 
-    public ServerAppInterface(ServerSideEngine engine) {
+    public ServerAppInterface(ServerProcessingEngine engine) {
         this.engine = engine;
-
-        // TO-DO implement constructor
     }
 
     public void readCommands() {
@@ -31,9 +30,9 @@ public class ServerAppInterface {
 
             // if the command begins with list, list all the connected clients
             if (command.length() >= 4 && command.substring(0, 4).compareTo("list") == 0) {
-                // TO-DO call the list method from the server to retrieve the clients information
-                // print the clients information
-                engine.list();
+                // TO-DO call the getConnectedClients method from the server to retrieve the clients information
+                // TO-DO print the clients information
+                ArrayList<String> clientsInformation = engine.getConnectedClients();
                 continue;
             }
 

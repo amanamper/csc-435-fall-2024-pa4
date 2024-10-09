@@ -3,15 +3,15 @@
 
 #include <memory>
 
-#include "ServerSideEngine.hpp"
+#include "ServerProcessingEngine.hpp"
 
 class ServerAppInterface
 {
-    std::shared_ptr<ServerSideEngine> engine;
+    std::shared_ptr<ServerProcessingEngine> engine;
 
     public:
         // constructor
-        ServerAppInterface(std::shared_ptr<ServerSideEngine> engine);
+        ServerAppInterface(std::shared_ptr<ServerProcessingEngine> engine);
 
         // default virtual destructor
         virtual ~ServerAppInterface() = default;
