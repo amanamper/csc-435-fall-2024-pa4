@@ -15,7 +15,7 @@ void ClientAppInterface::readCommands() {
         std::cout << "> ";
         
         // read from command line
-        std::cin >> command;
+        std::getline(std::cin, command);
 
         // if the command is quit, terminate the program       
         if (command == "quit") {
