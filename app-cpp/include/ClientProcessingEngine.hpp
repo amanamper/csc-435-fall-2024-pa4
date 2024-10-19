@@ -5,8 +5,6 @@
 #include <string>
 #include <vector>
 
-#include "IndexStore.hpp"
-
 struct IndexResult {
     double executionTime;
     long totalBytesRead;
