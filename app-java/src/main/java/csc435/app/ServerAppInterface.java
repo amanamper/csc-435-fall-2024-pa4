@@ -20,7 +20,7 @@ public class ServerAppInterface {
             System.out.print("> ");
             
             // read from command line
-            command = sc.next();
+            command = sc.nextLine();
 
             // if the command is quit, terminate the program       
             if (command.compareTo("quit") == 0) {
